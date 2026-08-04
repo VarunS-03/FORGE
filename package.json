@@ -1,0 +1,12 @@
+{
+  "name": "forge",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm",
+  "scripts": {
+    "build": "echo \"Build pipeline coming soon\"",
+    "dev": "echo \"Development pipeline coming soon\"",
+    "lint": "echo \"Lint configuration coming soon\"",
+    "test": "echo \"Testing pipeline coming soon\""
+  }
+}

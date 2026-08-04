@@ -1,0 +1,2 @@
+// producthunt collector
+export {};

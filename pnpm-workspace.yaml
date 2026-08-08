@@ -3,3 +3,6 @@ packages:
   - "packages/*"
   - "collectors/*"
   - "engines/*"
+allowBuilds:
+  '@prisma/engines': true
+  prisma: true

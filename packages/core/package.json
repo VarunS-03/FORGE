@@ -1,6 +1,26 @@
 {
   "name": "@forge/core",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
-  "main": "index.ts"
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "node -e \"const fs = require('node:fs'); fs.rmSync('dist', { recursive: true, force: true }); fs.rmSync('tsconfig.tsbuildinfo', { force: true })\"",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@forge/config": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.0"
+  }
 }

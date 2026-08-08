@@ -27,7 +27,15 @@ importers:
         specifier: ^4.0.0
         version: 4.1.10(@types/node@26.1.2)(vite@8.2.1(@types/node@26.1.2))
 
-  packages/core: {}
+  packages/core:
+    dependencies:
+      '@forge/config':
+        specifier: workspace:*
+        version: link:../config
+    devDependencies:
+      vitest:
+        specifier: ^4.0.0
+        version: 4.1.10(@types/node@26.1.2)(vite@8.2.1(@types/node@26.1.2))
 
   packages/database: {}
 
